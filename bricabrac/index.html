@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Le vendeur d'oeuvres d'arts</title>
+</head>
+
+<body>
+	<h1>Bric'arts Brac</h1>
+
+	<p>Bienvenue sur le site Bric'arts Brac ! Vous pourrez ici mettre en vente vos
+		<br>oeuvres d'arts de toute époque et recevrez instantanément une estimation
+		<br>du prix de rachat.
+	</p>
+
+	<form method="post" action="estimation.php">
+		<input type="text" id="nom" name="nom" placeholder="Nom de l'oeuvre d'art" required>
+		<input type="text" id="type" name="type" placeholder="Type d'oeuvre" required>
+		<input type="number" id="annee" name="annee" placeholder="Année de l'oeuvre d'art" value="1920" required>
+		<input type="submit" value="Lancer l'estimation">
+	</form>
+
+</body>
+
+</html>

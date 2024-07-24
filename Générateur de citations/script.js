@@ -1,0 +1,55 @@
+let nom = document.getElementById("nom")
+let citation = document.getElementById("citation")
+let image = document.getElementById("image")
+
+let btn = document.getElementById("btn")
+btn.addEventListener("click", Generer)
+
+function Generer() {
+	let choice = Math.floor(Math.random() * (citations.length - 0))
+	let random_quote = citations[choice]
+
+	nom.innerText = random_quote["nom"]
+	image.setAttribute("src", random_quote["image"])
+	citation.innerHTML = random_quote["citation"]
+};
+
+
+
+var citations = [
+	{
+		"nom": "Bill gates",
+		"citation": "Le logiciel est une excellente combinaison entre l'art et l'ingénierie.",
+		"image": "images/ananas.png"
+	},
+	{
+		"nom": "Bjarne Stroustrup",
+		"citation": "Il n'y a que deux sortes de langages de programmation: ceux dont les gens disent toujours du mal et ceux que personne n'utilise.",
+		"image": "images/cerise.png"
+	},
+	{
+		"nom": "Edsger Dijkstra",
+		"citation": "Si debugger, c’est supprimer des bugs, alors programmer ne peut être que les ajouter",
+		"image": "images/orange.png"
+	},
+	{
+		"nom": "Mark Zuckerberg",
+		"citation": "Une règle simple pour vraiment changer les choses, c’est de commencer toujours par le plus simple, et non par le plus difficile. Parce que c’est la meilleure manière de progresser rapidement.",
+		"image": "images/pasteque.png"
+	},
+	{
+		"nom": "Toby Parkins",
+		"citation": "La refactorisation c’est comme faire la vaisselle après la cuisine.",
+		"image": "images/pomme.png"
+	},
+	{
+		"nom": "Auteur inconnu",
+		"citation": "Le fossé séparant théorie et pratique est moins large en théorie qu’il ne l’est en pratique",
+		"image": "images/slot.png"
+	},
+	{
+		"nom": "Alain Turing",
+		"citation": "Les tentatives de création de machines pensantes nous seront d'une grande aide pour découvrir comment nous pensons nous-mêmes.",
+		"image": "images/justix.jpg"
+	}
+]
